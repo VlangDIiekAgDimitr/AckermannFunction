@@ -5,6 +5,9 @@
  */
 package iek.agdimitr.ackermannfunction;
 
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
 /**
  *
  * @author User
@@ -23,19 +26,24 @@ public class AckermannMain {
             return n+1;
         } else
             if (n==0){
+              
                 return findAckermann(m-1, 1);
             }else
             {
-                return findAckermann(m-1, findAckermann(m, n-1));
+               return findAckermann(m-1, findAckermann(m, n-1));
             }
     
     }
     public static void main(String[] args) {
         // TODO code application logic here
         
+       String mValue = JOptionPane.showInputDialog("Enter m value");
+       int m = Integer.parseInt(mValue);
+       String nValue = JOptionPane.showInputDialog("Enter n value");
+       int n = Integer.parseInt(nValue);
        
         
-        System.out.println("\n Ackermann value computed is:  "+ findAckermann(3,12)+"\n");
+        System.out.println("\n Ackermann("+m+","+n+") is:  "+ findAckermann(m,n)+"\n");
                 }
     
    
