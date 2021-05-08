@@ -30,7 +30,8 @@ public class AckermannMain {
                 return findAckermann(m-1, 1);
             }else
             {
-               return findAckermann(m-1, findAckermann(m, n-1));
+               return findAckermann(m-1, 
+                       findAckermann(m, n-1));
             }
     
     }
