@@ -42,10 +42,8 @@ public class AckermannMain {
        int m = Integer.parseInt(mValue);
        String nValue = JOptionPane.showInputDialog("Enter n value");
        int n = Integer.parseInt(nValue);
-       
-        
+               
         System.out.println("\n Ackermann("+m+","+n+") is:  "+ findAckermann(m,n)+"\n");
                 }
-    
    
 }
