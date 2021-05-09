@@ -10,4 +10,15 @@
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
     </properties>
+    <profiles>
+    <profile>
+        <id>integration-tests</id>
+        <activation>
+        <activeByDefault>true</activeByDefault>
+    </activation>
+    </profile>
+    <profile>
+        <id>mutation-tests</id>
+    </profile>
+</profiles>
 </project>
