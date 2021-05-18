@@ -6,7 +6,7 @@
 package iek.agdimitr.ackermannfunction;
 
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
+
 
 /**
  *
